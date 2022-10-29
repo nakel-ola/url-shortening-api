@@ -31,25 +31,29 @@ const Footer = () => {
             <ul key={index} className="m-2 md:mt-0 text-center">
               <h1 className="text-white font-bold my-2">{name}</h1>
 
-              {links.map((link: string,index: number) => (
-                <li key={index} className="text-neutral-gray my-1">{link}</li>
+              {links.map((link: string, index: number) => (
+                <li key={index} className="text-neutral-gray my-1">
+                  <a href="#" className="">
+                    {link}
+                  </a>
+                </li>
               ))}
             </ul>
           ))}
         </div>
         <div className="flex items-center mb-auto m-2">
-          <button className="h-[35px] w-[35px] flex items-center justify-center mx-1">
+          <a className="h-[35px] w-[35px] flex items-center justify-center mx-1 cursor-pointer">
             <img src={fb} alt="" className="h-[20px] w-[20px]" />
-          </button>
-          <button className="h-[35px] w-[35px] flex items-center justify-center mx-1">
+          </a>
+          <a className="h-[35px] w-[35px] flex items-center justify-center mx-1 cursor-pointer">
             <img src={twitter} alt="" className="h-[20px] w-[20px]" />
-          </button>
-          <button className="h-[35px] w-[35px] flex items-center justify-center mx-1">
+          </a>
+          <a className="h-[35px] w-[35px] flex items-center justify-center mx-1 cursor-pointer">
             <img src={pinterest} alt="" className="h-[20px] w-[20px]" />
-          </button>
-          <button className="h-[35px] w-[35px] flex items-center justify-center mx-1">
+          </a>
+          <a className="h-[35px] w-[35px] flex items-center justify-center mx-1 cursor-pointer">
             <img src={instagram} alt="" className="h-[20px] w-[20px]" />
-          </button>
+          </a>
         </div>
       </div>
     </footer>
