@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import AdvanceSection from "./components/AdvanceSection";
-import Footer from "./components/Footer";
 import BoostCard from "./components/BoostCard";
+import Footer from "./components/Footer";
 import FormCard from "./components/FormCard";
 import HeroSection from "./components/HeroSection";
 import MenuCard from "./components/MenuCard";
@@ -14,14 +14,14 @@ function App() {
 
   return (
     <div className="grid place-items-center bg-white h-screen">
-
       <Navbar setToggle={setToggle} />
+      <main className="w-full">
+        <HeroSection />
+        <FormCard />
+        <AdvanceSection />
 
-      <HeroSection />
-      <FormCard />
-      <AdvanceSection />
-
-      <BoostCard />
+        <BoostCard />
+      </main>
 
       <Footer />
 
