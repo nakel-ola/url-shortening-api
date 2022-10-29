@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between flex-[0.5] ">
           {items.map(({ name, links }, index: number) => (
             <ul key={index} className="m-2 md:mt-0 text-center">
-              <h1 className="text-white font-bold my-2">{name}</h1>
+              <li className="text-white font-bold my-2">{name}</li>
 
               {links.map((link: string, index: number) => (
                 <li key={index} className="text-neutral-gray my-1">
